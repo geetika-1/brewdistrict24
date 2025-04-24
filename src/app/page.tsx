@@ -397,9 +397,7 @@ export default function Home() {
              
             </div>
             <div className="border py-1"></div>
-            <div className="border border-dotted"><git add .
-git commit -m "Initial commit"
-/div>
+            <div className="border border-dotted"></div>
             {/* Newsletter Signup */}
             <div className="mt-16 p-8 bg-olive/10 rounded-lg">
               <h3 className="text-2xl font-freudian uppercase text-darkgray mb-4">
