@@ -3,8 +3,16 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
+
+type LocationItemProps = {
+  title: string;
+  icon: string;
+  location: string;
+};
 
 export default function Home() {
+  
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -17,7 +25,7 @@ export default function Home() {
             <br />
            <div className="relative z-10">fuss</div> 
           </h1>
-          <hr className="px-6 border-dotted" />
+          <hr className="px-6 border-dashed" />
           <h3 className="relative z-10 mt-6 text-xl md:text-4xl font-freudian uppercase max-w-3xl text-[#F8F7E5] mx-auto">
             Pure, honest and damn delicious
           </h3>
@@ -59,7 +67,7 @@ export default function Home() {
 
         {/* Center block with can */}
         <div className="flex justify-center items-center">
-          <div className="relative rounded-3xl h-[25rem] border border-[#d9d9d9] border-dotted p-2 max-w-[220px] md:max-w-[280px]">
+          <div className="relative rounded-3xl h-[25rem] border border-[#d9d9d9] border-dashed p-2 max-w-[220px] md:max-w-[280px]">
             <img
               alt="Front view of NEIPA beer can with dark green background and pink label on top"
               className="mx-auto border border-[#d9d9d9] rounded-3xl p-4 h-100"
@@ -80,19 +88,19 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 gap-x-6 gap-y-2 mt-4 text-xs md:text-sm font-Freudian uppercase font-bold text-[#1a1a1a]">
             <div>
-              <div className="border-b border-dotted border-[#d9d9d9] text-[#F8F7E5] pb-1">Storage advice</div>
+              <div className="border-b border-dashed border-[#d9d9d9] text-[#F8F7E5] pb-1">Storage advice</div>
               <div className="pt-1">4°C - 6°C</div>
             </div>
             <div>
-              <div className="border-b border-dotted border-[#d9d9d9] text-[#F8F7E5] pb-1">Color</div>
+              <div className="border-b border-dashed border-[#d9d9d9] text-[#F8F7E5] pb-1">Color</div>
               <div className="pt-1">7 EBC</div>
             </div>
             <div>
-              <div className="border-b border-dotted border-[#d9d9d9] text-[#F8F7E5] pb-1">Calories</div>
+              <div className="border-b border-dashed border-[#d9d9d9] text-[#F8F7E5] pb-1">Calories</div>
               <div className="pt-1">180</div>
             </div>
             <div>
-              <div className="border-b border-dotted border-[#d9d9d9] text-[#F8F7E5] pb-1">Bitterness</div>
+              <div className="border-b border-dashed border-[#d9d9d9] text-[#F8F7E5] pb-1">Bitterness</div>
               <div className="pt-1">23 IBU</div>
             </div>
           </div>
@@ -111,8 +119,8 @@ export default function Home() {
       </div>
 
       {/* Pink vertical side tab on right */}
-      <div className="fixed top-1/2 right-0 -translate-y-1/2 bg-pink-300 w-14 h-28 rounded-l-full flex flex-col items-center justify-center cursor-pointer select-none">
-        <div className="text-xs font-sharetech uppercase mb-1">Click the can</div>
+      <div className="fixed top-1/2 right-0 -translate-y-1/2 w-20 h-40 bg-[#7ECF86] rounded-l-full flex items-center justify-center">
+        
         <img
           alt="Icon of a beer can in black on pink background"
           className="w-6 h-auto"
@@ -251,7 +259,7 @@ export default function Home() {
 
           {/* Imperial Stout Beer */}
           {/* <div className="mb-24 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"> */}
-            <div className="order-2 md:order-1">
+            {/* <div className="order-2 md:order-1">
               <h3 className="text-2xl font-freudian uppercase text-cream mb-2">Imperial stout</h3>
               <p className="text-cream mb-2">Alc. 10% vol - 330 ml</p>
 
@@ -305,7 +313,7 @@ export default function Home() {
                 height={500}
                 className="object-contain"
               />
-            </div>
+            </div> */}
           {/* </div> */}
 
           {/* NEIPA Beer */}
@@ -382,24 +390,28 @@ export default function Home() {
               <br />
               This <span className="text-center freudian mb-2 w-[12.5vw] inline-block text-[8px] align-middle">A haven for like-hearted people, where we drink, laugh and have good conversations</span> is where we come together <span className="text-center font-freudian mb-2 w-[6.5vw] inline-block text-[8px] align-middle">Enjoy every given moment</span> as one.
             </h3>
-
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+<div className="px-8">
+   <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
               <div>
-                <p className="text-darkgray">
+                <p className="text-[1vw] text-[#1D1D1D]">
                   In good company, we immerse ourselves in gezelligheid. Together we laugh, drink beer and open ourselves up to new surprising experiences. We give way to all our senses so we can connect to a world that is packed with taste.
                 </p>
               </div>
               <div>
-                <p className="text-darkgray">
+                <p className="text-[1vw] text-[#1D1D1D]">
                   Our classic craft beers are brewed without fuss. With water, grain, yeast and hops, we return to the essence where the most diverse and authentic flavors are created. Pure and honest. Damn delicious.
                 </p>
               </div>
+            
              
             </div>
-            <div className="border py-1"></div>
-            <div className="border border-dotted"></div>
+            <div className="border-t border-1 border-solid mt-10 border-[#1D1D1D]"></div>
+            <div className="border-solid border-t border-dashed border-[#1D1D1D] mt-2"></div>
+</div>
+           
+          
             {/* Newsletter Signup */}
-            <div className="mt-16 p-8 bg-olive/10 rounded-lg">
+            {/* <div className="mt-16 p-8 bg-olive/10 rounded-lg">
               <h3 className="text-2xl font-freudian uppercase text-darkgray mb-4">
                 Become part of our hood
               </h3>
@@ -420,14 +432,83 @@ export default function Home() {
                   Subscribe
                 </button>
               </div>
-            </div>
+            </div> */}
+        
           </div>
         </div>
       </section>
+      <section className="bg-[#1D1D1D] transition-opacity duration-300 text-[#F8F7E5] h-[100vh] flex items-center justify-center">
+      <div className="max-w-7xl w-full flex  flex-col  lg:flex-row  justify-center gap-12 lg:gap-24">
+      {/* Left text block */}
+      <div className="flex flex-col  items-start max-w-xs sm:max-w-sm lg:max-w-md">
+        <h1 className="font-Roseford text-[4vw] font-400 leading-[4.4vw] sm:text-5xl leading-tight text-[#f3f4e8]">
+          BECOME
+          <br />
+          PART
+          <span className="text-[8px] font-Freudian inline-block align-middle w-[3.75vw] text-center px-2 inline-block ml-1 mr-1">
+            BE THE FIRST
+          </span>
+          OF
+          <br />
+          OUR HOOD
+        </h1>
+      </div>
 
+      {/* Right text and form block */}
+      <div className="col">
+      <div className="max-w-md text-[1vw] font-Eczar w-[25vw] text-[#F8F7E5]">
+        <p className="mb-6 font-Eczar leading-6">
+          Only the absolute pioneers who sign up for our newsletter
+           get a front row seat,because at BrewDistrict24 we cherish 
+           those who embrace this adventure with us from
+          the very beginning.
+        </p>
+        <form className="mb-2 relative"
+        //  onSubmit={handleSubmit}
+        >
+          <input
+            aria-label="Your email address"
+            className="w-full bg-transparent border-b border-gray-600 text-gray-400 placeholder-gray-600 focus:outline-none focus:border-green-500 transition-colors duration-300 py-1"
+            placeholder="Your email address"
+            required
+            type="email"
+            // value={email}
+            // onChange={(e) => setEmail(e.target.value)}
+          />
+             <button
+        aria-label="Submit newsletter signup"
+        className="flex absolute right-[-55px] bottom-[15px] items-center justify-center w-10 h-10 rounded-full bg-[#6bbf73] text-black hover:bg-[#5bb263] transition-colors duration-300"
+        // onClick={handleSubmit}
+      >
+      <FiArrowUpRight className="text-2xl" />
+      </button>
+        </form>
+        <p className="text-[10px]">
+          This site is protected by reCAPTCHA and the Google{' '}
+          <a className="underline" href="#">
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a className="underline" href="#">
+            Terms of Service
+          </a>{' '}
+          apply.
+        </p>
+     
+      </div>
+      </div>
+  
+
+      {/* Green circle with arrow icon */}
+     
+    </div>
+      </section>
+<section className="w-100">
+  <img src="/images/Brewdistrict_24_SocialShare.png" alt="img-last" className="w-[100vw]"/>
+</section>
       {/* Locations Section */}
-      <section className="py-16 bg-olive/20">
-        <div className="container max-w-6xl px-4 mx-auto">
+      <section className="py-16 bg-[#1D1D1D] text-[#F8F7E5] ">
+        {/* <div className="container max-w-6xl px-4 mx-auto">
           <h2 className="text-3xl md:text-4xl font-freudian uppercase text-darkgray text-center mb-8">
             BD24 in your hood?
           </h2>
@@ -438,23 +519,87 @@ export default function Home() {
             Are you interested in selling our classic craft beers at your location? <Link href="/contact" className="text-olive hover:underline">Contact</Link> us for more information about our beers, prices and possible collaborations. Together we will let your customers experience what truly enjoying the moment is all about.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-12">
-            {[
-              "Onze bierwinkel", "Biermenneke", "Cafe de Deut", "Cafe jos",
-              "Zuss brasserie", "Cornelissen", "Hops & Hopes", "Proeflokaal van Horst",
-              "Tierney's Irish Pubs", "Nico de Witt PLUS", "Grut eten & drinken", "Cafe Samson"
-            ].map((location, i) => (
-              <div key={`location-${location}`} className="bg-cream p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-w-1 aspect-h-1 bg-darkgray/5 mb-2 rounded flex items-center justify-center">
-                  <div className="w-16 h-16 bg-darkgray/10 rounded" />
-                </div>
-                <h4 className="text-sm font-bold text-darkgray truncate">{location}</h4>
-                <p className="text-xs text-darkgray/70">Location</p>
-              </div>
+         
+        </div> */}
+         {/* Grid Section */}
+      <div className="grid  grid-cols-1 md:grid-cols-2  max-w-5xl mx-auto px-6 ">
+        <h2 className="font-Roseford  text-[#F8F7E5] text-[4vw] leading-[1.1] text-center md:text-left">
+          BD24 IN<br />YOUR<br />HOOD?
+        </h2>
+          <div className="w-[58%]">
+            <div className="text-xs font-Freudian md:text-sm font-semibold uppercase mb-1">
+          THE SMELL OF FRESHLY BREWED EXCITEMENT IS IN THE AIR
+         
+        </div >
+        <p className="text-[0.75rem] md:text-[12px] font-Eczar max-w-md leading-relaxed">
+          Are you interested in selling our classic craft beers at your location?{' '}
+          <a className="underline text-[#e9e9d3]" href="#">Contact</a> us for more
+          information about our beers, prices and possible collaborations. Together
+          we will let your customers experience what truly ‘enjoying the moment’ is all about.
+        </p>
+          </div>
+        
+
+        
+      </div>
+
+      {/* Sliding Section */}
+      <div
+        className="mt-2 overflow-hidden border-b border-dashed border-[#e9e9d3]"
+        aria-label="Continuous sliding list of locations"
+      >
+        <div className="slider-track inline-flex animate-scroll whitespace-nowrap mb-8">
+          {/* First set of items */}
+          <div className="inline-flex space-x-12 pr-12">
+            {locationItems.map((item, index) => (
+              <LocationItem key={index} {...item} />
+            ))}
+          </div>
+
+          {/* Duplicate set for continuous effect */}
+          <div className="inline-flex space-x-12 pr-12" aria-hidden="true">
+            {locationItems.map((item, index) => (
+              <LocationItem key={`duplicate-${index}`} {...item} />
             ))}
           </div>
         </div>
+      </div>
       </section>
+    </div>
+  );
+}
+const locationItems = [
+  {
+    title: 'LOKAAL',
+    icon: 'fas fa-mobile-alt',
+    location: 'NIJMEGEN'
+  },
+  {
+    title: 'CAFE DE KROON',
+    icon: 'fas fa-mobile-alt',
+    location: 'NIJMEGEN'
+  },
+  {
+    title: 'OLDSKOOL BREWERY',
+    icon: 'fas fa-mobile-alt',
+    location: 'EINDHOVEN'
+  },
+  {
+    title: 'DE BIERBURGER',
+    icon: 'fas fa-arrow-up-right',
+    location: 'BOXMEER'
+  }
+];
+
+// Helper: Item component
+function LocationItem({ title, icon, location }: LocationItemProps) {
+  return (
+    <div className="font-nosifer text-[1.5rem] leading-none flex flex-col items-start min-w-[180px]">
+      {title}
+      <div className="flex items-center mt-1 space-x-1 text-[0.5rem] font-semibold uppercase">
+        <i className={icon}></i>
+        <span>{location}</span>
+      </div>
     </div>
   );
 }
