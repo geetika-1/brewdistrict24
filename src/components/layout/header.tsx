@@ -21,8 +21,8 @@ export default function Header() {
     
         <div className="flex items-center justify-center w-full">
       
-      <div className="flex-grow flex flex-col-reverse h-px bg-white">  {/* Left - Social + Home */}
-            <div className="flex items-center gap-4 text-sm font-bold">
+      <div className="flex-grow flex flex-col-reverse h-px w-[50%] bg-white">  {/* Left - Social + Home */}
+            <div className="flex items-center gap-4 text-sm font-bold mb-4">
               <span className="cursor-pointer">HOME</span>
               <FaInstagram className="cursor-pointer" />
               <FaLinkedinIn className="cursor-pointer" />
@@ -30,10 +30,10 @@ export default function Header() {
               <FiMapPin className="cursor-pointer" />
             </div></div>
     
-      <img src="/images/logo.svg" alt="Divider Icon" className="h-24 px-4 whitespace-nowrap " />
+      <img src="/images/download.svg" alt="Divider Icon" className="h-24 px-8 whitespace-nowrap text-white " />
       {/* Right - Order, Cart, Menu, Lang */}
-      <div className="flex-grow flex flex-col-reverse h-px bg-white">  
-            <div className="flex items-center gap-4 text-sm font-bold">
+      <div className="flex-grow flex flex-col-reverse items-end w-[50%] h-px bg-white">  
+            <div className="flex items-center gap-4 text-sm font-bold mb-4">
               <div className="relative">
                 <span className="text-[10px] absolute -top-4 left-1 text-white font-extrabold rotate-[-15deg]">
                   CLICK<br />THE CAN
