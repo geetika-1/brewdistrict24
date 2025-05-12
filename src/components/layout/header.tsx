@@ -49,7 +49,7 @@ export default function Header() {
 
 
     // </header>
-    <header className="text-[#f2f1e5] py-4 px-6 bg-[#617c70] md:bg-[#617c70] bg-[rgba(0,0,0,0.05)] md:relative fixed md:static z-20 md:z-auto w-full">
+    <header className="text-[#f2f1e5] py-4 px-6 bg-[#617c70] md:bg-[#617c70] bg-[rgba(0,0,0,0.05)] md:relative fixed md:static z-[20] md:z-auto w-full">
     <div className="flex flex-col md:flex-row items-center mx-auto justify-between relative">
       {/* Mobile Layout */}
       <div className="flex md:hidden w-full justify-between items-center mb-4">
