@@ -535,16 +535,16 @@ export default function Home() {
     </h2>
 
     <div className="mx-auto text-center">
-      <h3 className="text-[4vw] font-Roseford uppercase text-darkgray mb-8 leading-tight">
+      <h3 className="text-[8vw] md:text-[4vw] font-Roseford uppercase text-darkgray mb-8 leading-tight">
         Welcome to the neighborhood.
         <br />
         This{" "}
-        <span className="text-center freudian mb-2 w-[12.5vw] inline-block text-[8px] align-middle">
+        <span className="text-center  hidden md:inline-block freudian mb-2 w-[12.5vw] text-[8px] align-middle">
           A haven for like-hearted people, where we drink, laugh and have good
           conversations
         </span>{" "}
         is where we come together{" "}
-        <span className="text-center font-freudian mb-2 w-[6.5vw] inline-block text-[8px] align-middle">
+        <span className="text-center  hidden md:inline-block font-freudian mb-2 w-[6.5vw] text-[8px] align-middle">
           Enjoy every given moment
         </span>{" "}
         as one.
@@ -553,12 +553,12 @@ export default function Home() {
       <div className="px-2 sm:px-4 md:px-8">
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-left">
           <div>
-            <p className="text-[1vw] text-[#1D1D1D]">
+            <p className="text-[3.5vw] md:text-[1vw] text-[#1D1D1D]">
               In good company, we immerse ourselves in gezelligheid. Together we laugh, drink beer and open ourselves up to new surprising experiences. We give way to all our senses so we can connect to a world that is packed with taste.
             </p>
           </div>
           <div>
-            <p className="text-[1vw] text-[#1D1D1D]">
+            <p className="text-[3.5vw] md:text-[1vw] text-[#1D1D1D]">
               Our classic craft beers are brewed without fuss. With water, grain, yeast and hops, we return to the essence where the most diverse and authentic flavors are created. Pure and honest. Damn delicious.
             </p>
           </div>
@@ -572,25 +572,25 @@ export default function Home() {
 </section>
 {/* newsletter section */}
       <section className="bg-[#1D1D1D] transition-opacity duration-300 text-[#F8F7E5] h-[100vh] flex items-center justify-center">
-      <div className="max-w-7xl w-full flex  flex-col  lg:flex-row  justify-center gap-12 lg:gap-24">
+      <div className="max-w-7xl w-full flex  flex-col px-3  lg:flex-row  justify-center gap-12 lg:gap-24">
      
       <div className="flex flex-col  items-start max-w-xs sm:max-w-sm lg:max-w-md">
-        <h1 className="font-Roseford text-[4vw] font-400 leading-[4.4vw] sm:text-5xl leading-tight text-[#f3f4e8]">
+        <h1 className="font-Roseford   md:text-[4vw]  md:px-10 font-400 leading-[4.4vw] text-[8vw] leading-tight text-[#f3f4e8]">
           BECOME
-          <br />
+          
           PART
-          <span className="text-[8px] font-Freudian inline-block align-middle w-[3.75vw] text-center px-2 inline-block ml-1 mr-1">
+          <span className="text-[8px] hidden md:inline-block font-Freudian  align-middle w-[3.75vw] text-center px-2 inline-block ml-1 mr-1">
             BE THE FIRST
           </span>
           OF
-          <br />
+          
           OUR HOOD
         </h1>
       </div>
 
       <div className="col">
-      <div className="max-w-md text-[1vw] font-Eczar w-[25vw] text-[#F8F7E5]">
-        <p className="mb-6 font-Eczar leading-6">
+      <div className="max-w-md  md:text-[1vw] font-Eczar text-[3.5vw]  w-100 md:w-[25vw] text-[#F8F7E5]">
+        <p className="mb-8 font-Eczar leading-6">
           Only the absolute pioneers who sign up for our newsletter
            get a front row seat,because at BrewDistrict24 we cherish 
            those who embrace this adventure with us from
@@ -609,7 +609,7 @@ export default function Home() {
           />
              <button
         aria-label="Submit newsletter signup"
-        className="flex absolute right-[-55px] bottom-[15px] items-center justify-center w-10 h-10 rounded-full bg-[#6bbf73] text-black hover:bg-[#5bb263] transition-colors duration-300"
+        className="flex absolute right-0 md:right-[-55px] bottom-[15px] items-center justify-center w-10 h-10 rounded-full bg-[#6bbf73] text-black hover:bg-[#5bb263] transition-colors duration-300"
      
       >
       <FiArrowUpRight className="text-2xl" />
@@ -687,13 +687,13 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto px-6 gap-8">
     
     {/* Heading */}
-    <h2 className="font-Roseford text-[#F8F7E5] text-[4vw] leading-[1.1] text-center md:text-left">
-      BD24 IN<br />YOUR<br />HOOD?
+    <h2 className="font-Roseford text-[#F8F7E5]  text-[8vw] md:text-[5vw]  leading-[1.1] text-left md:text-center md:px-11 md:text-left">
+      BD24 IN YOUR HOOD?
     </h2>
 
     {/* Paragraph Block with Responsive Wrapper */}
     <div className="w-full md:w-[58%]">
-      <div className="text-xs font-Freudian md:text-sm font-semibold uppercase mb-1">
+      <div className="text-xs font-Freudian md:text-sm font-semibold uppercase mb-2">
         THE SMELL OF FRESHLY BREWED EXCITEMENT IS IN THE AIR
       </div>
       <p className="text-[0.75rem] md:text-[12px] font-Eczar max-w-md leading-relaxed">
@@ -707,10 +707,10 @@ export default function Home() {
 
   {/* Sliding Section */}
   <div
-    className="mt-2 overflow-hidden border-b border-dashed border-[#e9e9d3]"
+    className="mt-2 overflow-hidden"
     aria-label="Continuous sliding list of locations"
   >
-    <div className="slider-track inline-flex animate-scroll whitespace-nowrap mb-8">
+    <div className="slider-track mt-6 inline-flex animate-scroll whitespace-nowrap mb-8">
       {/* First set of items */}
       <div className="inline-flex space-x-12 pr-12">
         {locationItems.map((item, index) => (
@@ -724,8 +724,14 @@ export default function Home() {
           <LocationItem key={`duplicate-${index}`} {...item} />
         ))}
       </div>
+      
     </div>
   </div>
+  <div className="px-6">
+  <div className="border border-[1.5px] border-[#F8F7E5] mb-1"></div>
+  <div className="border border-dashed border-[#F8F7E5]"></div>
+  </div>
+ 
 </section>
 
     </div>
