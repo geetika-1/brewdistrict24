@@ -182,7 +182,7 @@ export default function Home() {
         </p>
       </div>
     </div>
-    <h1 className="text-5xl md:text-[8vw] font-Roseford text-[#1D1D1D] block md:hidden font-bold leading-none">
+    <h1 className="text-6xl font-Roseford text-[#1D1D1D] block md:hidden font-bold leading-none">
           NEIPA
         </h1>
     {/* Center block with can */}
