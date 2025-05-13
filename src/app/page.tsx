@@ -156,7 +156,7 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 text-center md:text-left">
     
     {/* Left block */}
-    <div className="flex flex-col justify-between items-center md:items-end space-y-4">
+    <div className="flex flex-col justify-between items-center md:items-end hidden md:block space-y-4">
       <div className="flex flex-col items-center md:items-end">
         <p className="text-xs md:text-sm uppercase font-Freudian">
           Discover our beers
@@ -182,7 +182,9 @@ export default function Home() {
         </p>
       </div>
     </div>
-
+    <h1 className="text-5xl md:text-[8vw] font-Roseford text-[#1D1D1D] block md:hidden font-bold leading-none">
+          NEIPA
+        </h1>
     {/* Center block with can */}
     <div className="flex justify-center items-center">
       <div className="relative rounded-3xl h-[25rem] border border-[#d9d9d9] border-dashed p-2 w-full max-w-[220px] md:max-w-[280px]">
@@ -195,7 +197,7 @@ export default function Home() {
     </div>
 
     {/* Right block */}
-    <div className="flex flex-col justify-center space-y-4 text-left">
+    <div className="flex flex-col justify-center hidden md:block space-y-4 text-left">
       <p className="text-xs md:text-sm uppercase font-Freudian font-bold">
         Experience the smooth fruit sensation of New England IPA
       </p>
@@ -535,7 +537,7 @@ export default function Home() {
     </h2>
 
     <div className="mx-auto text-center">
-      <h3 className="text-[8vw] md:text-[4vw] font-Roseford uppercase text-darkgray mb-8 leading-tight">
+      <h3 className="text-[8vw]  md:text-[4vw] font-Roseford uppercase text-darkgray mb-8 leading-tight">
         Welcome to the neighborhood.
         <br />
         This{" "}
@@ -575,7 +577,7 @@ export default function Home() {
       <div className="max-w-7xl w-full flex  flex-col px-3  lg:flex-row  justify-center gap-12 lg:gap-24">
      
       <div className="flex flex-col  items-start max-w-xs sm:max-w-sm lg:max-w-md">
-        <h1 className="font-Roseford   md:text-[4vw]  md:px-10 font-400 leading-[4.4vw] text-[8vw] leading-tight text-[#f3f4e8]">
+        <h1 className="font-Roseford   md:text-[4vw]  md:px-10 xs:text-[7vw] font-400 leading-[4.4vw] text-[8vw] leading-tight text-[#f3f4e8]">
           BECOME
           
           PART
