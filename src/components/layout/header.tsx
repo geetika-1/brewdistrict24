@@ -95,7 +95,7 @@ useEffect(() => {
           src={!isMenu ? "/images/download.svg" : "/images/logo-1.svg"}
           alt="Divider Icon"
           className={`h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white ${scrollY ? "bg-black px-0" : "bg-transparent"}`}
-        />:
+        />
       
 
         <div className="flex-grow flex flex-col-reverse items-end w-[50%] h-px bg-white">
