@@ -166,7 +166,7 @@ export default function Home() {
                   Alc. 6% vol - 330 ml
                 </p>
               </div>
-              <div className="mt-8 text-center md:text-right">
+              <div className="mt-10 text-center md:text-right">
                 <p className="text-xs uppercase font-Freudian mb-1">
                   Ingredients
                 </p>
@@ -232,13 +232,13 @@ export default function Home() {
           </Parallax>
         </div>
         {/* Pink side tab (hidden on small screens) */}
-        <div className="hidden lg:flex fixed top-1/2 right-0 -translate-y-1/2 w-20 h-40 bg-[#7ECF86] rounded-l-full items-center justify-center z-10">
+        {/* <div className="hidden lg:flex fixed top-1/2 right-0 -translate-y-1/2 w-20 h-40 bg-[#7ECF86] rounded-l-full items-center justify-center z-10">
           <img
             alt="Icon of a beer can in black on pink background"
             className="w-6 h-auto"
             src="https://storage.googleapis.com/a1aa/image/30d9d3e7-800b-47a1-5ab5-d0f66ba5de79.jpg"
           />
-        </div>
+        </div> */}
       </section>
 
 
