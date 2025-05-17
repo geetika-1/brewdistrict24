@@ -97,11 +97,17 @@ const config = {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        fadeInUp: {
+      '0%': { opacity: '0', transform: 'translateY(40px)' },
+      '100%': { opacity: '1', transform: 'translateY(0)' },
+    },
       },
+      
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll: 'scroll 20s linear infinite',
+         fadeInUp: 'fadeInUp 0.5s ease-out forwards',
       },
     },
   },
