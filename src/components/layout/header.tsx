@@ -22,48 +22,8 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
 
 
   return (
-    // <header className="bg-[#617c70] text-[#f2f1e5] py-4 px-6">
-    //   <div className="flex items-center mx-auto">
-     
-    
-    //     <div className="flex items-center justify-center w-full">
-      
-    //   <div className="flex-grow flex flex-col-reverse h-px w-[50%] bg-white"> 
-    //         <div className="flex items-center gap-4 text-sm font-bold mb-4">
-    //           <span className="cursor-pointer">HOME</span>
-    //           <FaInstagram className="cursor-pointer" />
-    //           <FaLinkedinIn className="cursor-pointer" />
-    //           <FaFacebookF className="cursor-pointer" />
-    //           <FiMapPin className="cursor-pointer" />
-    //         </div></div>
-    
-    //   <img src="/images/download.svg" alt="Divider Icon" className="h-24 px-8 whitespace-nowrap text-white " />
-
-    //   <div className="flex-grow flex flex-col-reverse items-end w-[50%] h-px bg-white">  
-    //         <div className="flex items-center gap-4 text-sm font-bold mb-4">
-    //           <div className="relative">
-    //             <span className="text-[10px] absolute -top-4 left-1 text-white font-extrabold rotate-[-15deg]">
-    //               CLICK<br />THE CAN
-    //             </span>
-    //             <button className="bg-[#d998b5] text-black px-4 py-2 rounded-full font-bold text-sm">
-    //               ORDER NOW
-    //             </button>
-    //           </div>
-    //           <FiShoppingCart className="text-2xl cursor-pointer" />
-    //           <span className="cursor-pointer">MENU</span>
-    //           <HiOutlineMenu className="text-2xl cursor-pointer" />
-    //           <div className="border border-white px-2 py-1 rounded-full cursor-pointer">EN</div>
-    //         </div></div>
-    // </div>
-        
-    
-    //   </div>
-
- 
-
-
-    // </header>
-    <header className={`text-[#f2f1e5] py-4 px-6  md:relative fixed md:static z-[20] md:z-auto w-full ${isMenu ? "bg-[#F8F7E5]":"bg-[rgba(0,0,0,0.05)] md:bg-[#617c70]"}`}>
+   
+    <header className={`text-[#f2f1e5] py-4 px-6   fixed z-[20] w-full  transition-all duration-300  bg-white/20 backdrop-blur-md backdrop-saturate-150 ${isMenu ? "bg-[#F8F7E5]":"bg-[#617c70]"}`}>
     <div className="flex flex-col md:flex-row items-center mx-auto justify-between relative">
       {/* Mobile Layout */}
       <div className="flex md:hidden w-full justify-between items-center mb-4">
