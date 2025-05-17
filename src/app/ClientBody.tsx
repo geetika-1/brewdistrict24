@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function ClientBody({
   children,
@@ -15,7 +16,7 @@ export default function ClientBody({
 
   return (
     <body className="antialiased" suppressHydrationWarning>
-      {children}
+      <ParallaxProvider>{children}</ParallaxProvider>
     </body>
   );
 }
