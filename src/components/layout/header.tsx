@@ -1,5 +1,5 @@
 // components/Header.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
@@ -12,7 +12,17 @@ import { IoCloseOutline } from "react-icons/io5";
 }
 export default function Header({setMenu,isMenu}: HeaderProps) {
   // const [sidebarOpen, setSidebarOpen] = useState(false);
+const [scrollY, setScrollY] = useState(false);
 
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrollY(window.scrollY > 10); 
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
 
   const handleClick = () => {
@@ -23,23 +33,20 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
 
   return (
    
-    <header className={`text-[#f2f1e5] py-4 px-6   fixed z-[20] w-full  transition-all duration-300  bg-white/20 backdrop-blur-md backdrop-saturate-150 ${isMenu ? "bg-[#F8F7E5]":"bg-[#617c70]"}`}>
+    <header className={`text-[#f2f1e5] py-4 px-6 fixed z-[20] w-full transition-all duration-300 ${scrollY ? "bg-white/20 backdrop-blur-md backdrop-saturate-150" : "bg-transparent"} ${isMenu ? "bg-[#F8F7E5]":"bg-[#617c70]"}`}>
     <div className="flex flex-col md:flex-row items-center mx-auto justify-between relative">
       {/* Mobile Layout */}
       <div className="flex md:hidden w-full justify-between items-center mb-4">
         <button className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm hover:text-[#F8F7E5] hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
           ORDER NOW
         </button>
-       {!isMenu ?  <img
-          src="/images/download.svg"
-          alt="Divider Icon"
-          className="h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white"
-        />:
-       <img
-          src="/images/logo-1.svg"
-          alt="Divider Icon"
-          className="h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white"
-        />}
+    <div className={`px-8 h-24 md:h-24 h-16 flex items-center justify-center ${scrollY ? "bg-black px-0" : "bg-transparent"}`}>
+  <img
+    src={!isMenu ? "/images/download.svg" : "/images/logo-1.svg"}
+    alt="Divider Icon"
+    className="h-full w-auto whitespace-nowrap"
+  />
+</div>
         <div className="flex items-center gap-4">
           <FiShoppingCart className={`text-4xl cursor-pointer border rounded-full px-2 py-1  ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} />
          {!isMenu?<HiOutlineMenu
@@ -77,24 +84,19 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
       <div className="hidden md:flex items-center justify-center w-full">
         <div className="flex-grow flex flex-col-reverse h-px w-[50%] bg-white">
           <div className="flex items-center gap-4 text-sm font-bold mb-4">
-            <span className="cursor-pointer font-Freudian hover:opacity-60 transition-opacity duration-300 ">HOME</span>
-            <FaInstagram className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
-            <FaLinkedinIn className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
-            <FaFacebookF className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
-            <FiMapPin className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
+            <span className={`cursor-pointer font-Freudian hover:opacity-60 transition-opacity duration-300 ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`}>HOME</span>
+            <FaInstagram className={`cursor-pointer hover:opacity-60 transition-opacity duration-300 ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`} />
+            <FaLinkedinIn className={`cursor-pointer hover:opacity-60 transition-opacity duration-300 ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`} />
+            <FaFacebookF className={`cursor-pointer hover:opacity-60 transition-opacity duration-300 ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`}/>
+            <FiMapPin className={`cursor-pointer hover:opacity-60 transition-opacity duration-300 ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`} />
           </div>
         </div>
-{!isMenu ?  <img
-          src="/images/download.svg"
+ <img
+          src={!isMenu ? "/images/download.svg" : "/images/logo-1.svg"}
           alt="Divider Icon"
-          className="h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white"
+          className={`h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white ${scrollY ? "bg-black px-0" : "bg-transparent"}`}
         />:
-       <img
-          src="/images/logo-1.svg"
-          alt="Divider Icon"
-          className="h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white"
-        />}
-       
+      
 
         <div className="flex-grow flex flex-col-reverse items-end w-[50%] h-px bg-white">
           <div className="flex items-center gap-4 text-sm font-bold mb-4">

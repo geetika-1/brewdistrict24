@@ -30,10 +30,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header setMenu={setMenu} isMenu={isMenu}/>
-{isMenu &&  <Menu isMenu={isMenu}/>}
+{isMenu ? <Menu isMenu={isMenu} /> : (
+  <>
+    <main className="flex-grow">{children}</main>
+    <Footer />
+  </>
+)}
      
-      <main className="flex-grow">{children}</main>
-      <Footer />
       {mounted && (
         <>
           <AgeVerificationModal />

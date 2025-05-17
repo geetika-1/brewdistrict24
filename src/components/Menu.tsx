@@ -5,7 +5,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 const Menu = ({isMenu}:any) => {
   return (
     <>
-      <section className="bg-[#F8F7E5] transition-opacity duration-300 text-[#F8F7E5] h-[100vh] flex items-center justify-center">
+      <section className="bg-[#F8F7E5] w-full transition-opacity duration-300 text-[#F8F7E5] h-[100vh] flex items-center justify-center">
         <div className={`max-w-7xl w-full flex flex-col px-3 lg:flex-row justify-center gap-12 lg:gap-24 ${isMenu ? 'animate-fadeInUp' : ''}`}>
           <div className="flex flex-col items-start max-w-xs sm:max-w-sm lg:max-w-md">
             <ul className="font-Roseford md:text-[4vw] md:px-10 xs:text-[7vw] font-400 leading-[4.4vw] text-[8vw] leading-tight text-[#1D1D1D]">
