@@ -67,7 +67,7 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
     <div className="flex flex-col md:flex-row items-center mx-auto justify-between relative">
       {/* Mobile Layout */}
       <div className="flex md:hidden w-full justify-between items-center mb-4">
-        <button className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
+        <button className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm hover:text-[#F8F7E5] hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
           ORDER NOW
         </button>
        {!isMenu ?  <img
@@ -81,12 +81,12 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
           className="h-24 md:h-24 h-16 px-8 whitespace-nowrap text-white"
         />}
         <div className="flex items-center gap-4">
-          <FiShoppingCart className={`text-4xl cursor-pointer border rounded-full px-2 py-1  ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"}`} />
+          <FiShoppingCart className={`text-4xl cursor-pointer border rounded-full px-2 py-1  ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} />
          {!isMenu?<HiOutlineMenu
-            className={`text-2xl cursor-pointer ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`} 
+            className={`text-2xl cursor-pointer ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} 
             onClick={handleClick}
           />:  <IoCloseOutline
-            className={`text-2xl cursor-pointer ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"}`} 
+            className={`text-2xl cursor-pointer ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} 
             onClick={handleClick}/>} 
         
         </div>
@@ -117,11 +117,11 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
       <div className="hidden md:flex items-center justify-center w-full">
         <div className="flex-grow flex flex-col-reverse h-px w-[50%] bg-white">
           <div className="flex items-center gap-4 text-sm font-bold mb-4">
-            <span className="cursor-pointer font-Freudian ">HOME</span>
-            <FaInstagram className="cursor-pointer" />
-            <FaLinkedinIn className="cursor-pointer" />
-            <FaFacebookF className="cursor-pointer" />
-            <FiMapPin className="cursor-pointer" />
+            <span className="cursor-pointer font-Freudian hover:opacity-60 transition-opacity duration-300 ">HOME</span>
+            <FaInstagram className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
+            <FaLinkedinIn className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
+            <FaFacebookF className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
+            <FiMapPin className="cursor-pointer hover:opacity-60 transition-opacity duration-300" />
           </div>
         </div>
 {!isMenu ?  <img
@@ -140,15 +140,21 @@ export default function Header({setMenu,isMenu}: HeaderProps) {
           <div className="flex items-center gap-4 text-sm font-bold mb-4">
             <div className="relative">
          
-              <button className="bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full  text-sm">
+              <button className={`bg-[#d998b5] font-Freudian  px-4 py-2 rounded-full  text-sm hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
                 ORDER NOW
               </button>
             </div>
-            <FiShoppingCart className="text-4xl cursor-pointer border rounded-full px-2 py-1" />
-            <span  className="cursor-pointer font-Freudian" >{!isMenu? "MENU":"CLOSE"}</span>
-            <button onClick={handleClick}>{!isMenu?<HiOutlineMenu  className="text-2xl cursor-pointer" />:<IoCloseOutline className="text-2xl cursor pointer" />}  </button>
+            <FiShoppingCart className={`text-4xl cursor-pointer border rounded-full px-2 py-1 ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`}/>
+            <span  className={`cursor-pointer font-Freudian ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} >{!isMenu? "MENU":"CLOSE"}</span>
+            <button onClick={handleClick}>
+  {!isMenu ? (
+    <HiOutlineMenu className={`text-2xl cursor-pointer ${isMenu ? "text-[#1D1D1D]" : "text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} />
+  ) : (
+    <IoCloseOutline className={`text-2xl cursor-pointer ${isMenu ? "text-[#1D1D1D]" : "text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} />
+  )}
+</button>
            
-            <div className="border font-Freudian border-white px-2 py-1 rounded-full cursor-pointer">EN</div>
+            <div className={`border font-Freudian px-2 py-1 rounded-full cursor-pointer ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"}`}>EN</div>
           </div>
         </div>
       </div>
