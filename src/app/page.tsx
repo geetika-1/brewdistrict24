@@ -426,24 +426,54 @@ export default function Home() {
 }
 const locationItems = [
   {
-    title: "LOKAAL",
+    title: "ACC9 AIR COOLER CHEMICAL",
     icon: "fas fa-mobile-alt",
-    location: "NIJMEGEN",
+    location: "DUBAI",
   },
   {
-    title: "CAFE DE KROON",
+    title: "Anionic Polyacrylamide",
     icon: "fas fa-mobile-alt",
-    location: "NIJMEGEN",
+    location: "DUBAI",
   },
   {
-    title: "OLDSKOOL BREWERY",
+    title: "Antiscalant RO FROM Dhs",
     icon: "fas fa-mobile-alt",
-    location: "EINDHOVEN",
+    location: "DUBAI",
   },
   {
-    title: "DE BIERBURGER",
+    title: "Aqua Sol Break Degreaser",
     icon: "fas fa-arrow-up-right",
-    location: "BOXMEER",
+    location: "DUBAI",
+  },
+   {
+    title: "Borax Decahydrate Powder",
+    icon: "fas fa-mobile-alt",
+    location: "DUBAI",
+  },
+  {
+    title: "Ballast Tank Cleaner",
+    icon: "fas fa-mobile-alt",
+    location: "DUBAI",
+  },
+  {
+    title: "Boiler Treatment Pro Pack",
+    icon: "fas fa-mobile-alt",
+    location: "DUBAI",
+  },
+  {
+    title: "Biological Guard Antifouling",
+    icon: "fas fa-arrow-up-right",
+    location: "DUBAI",
+  },
+   {
+    title: "Calcium Hypochlorite",
+    icon: "fas fa-mobile-alt",
+    location: "DUBAI",
+  },
+  {
+    title: "Calcium Carbonate",
+    icon: "fas fa-arrow-up-right",
+    location: "DUBAI",
   },
 ];
 
