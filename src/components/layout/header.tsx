@@ -1,4 +1,5 @@
 // components/Header.js
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
@@ -37,9 +38,10 @@ useEffect(() => {
     <div className="flex flex-col md:flex-row items-center mx-auto justify-between relative">
       {/* Mobile Layout */}
       <div className="flex md:hidden w-full justify-between items-center mb-4">
-        <button className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm hover:text-[#F8F7E5] hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
-          ORDER NOW
-        </button>
+       
+      <Link href='/shop/' className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm hover:text-[#F8F7E5] hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#520000]"}`}>
+         ORDER NOW
+      </Link>
     <div className={`h-24 md:h-24 h-16 flex items-center justify-center ${scrollY ? "bg-black rounded-full" : "bg-transparent px-8"}`}>
   <img
     src={!isMenu ? "/images/a2.svg" : "/images/file.svg"}
@@ -102,9 +104,9 @@ useEffect(() => {
           <div className="flex items-center gap-4 text-sm font-bold mb-4">
             <div className="relative">
          
-              <button className={`bg-[#d998b5] font-Freudian  px-4 py-2 rounded-full  text-sm hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
+              <Link href='/shop' className={`bg-[#d998b5] font-Freudian  px-4 py-2 rounded-full  text-sm hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#520000]"}`}>
                 ORDER NOW
-              </button>
+              </Link>
             </div>
             <FiShoppingCart className={`text-4xl cursor-pointer border rounded-full px-2 py-1 ${isMenu?"text-[#1D1D1D] border-[#1D1D1D]":"text-[#F8F7E5]  border-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`}/>
             <span  className={`cursor-pointer font-Freudian ${isMenu?"text-[#1D1D1D]":"text-[#F8F7E5]"} hover:opacity-60 transition-opacity duration-300`} >{!isMenu? "MENU":"CLOSE"}</span>

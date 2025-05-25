@@ -12,9 +12,9 @@ type LocationItemProps = {
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative py-24 text-center  bg-[#596f61] overflow-hidden">
+      <section className="relative py-24 text-center  bg-[#003366] overflow-hidden">
         <div className="container max-w-6xl px-4 mt-4 mx-auto">
-          <h1 className="text-6xl md:text-6xl lg:text-7xl xl:text-9xl font-freudian animate-fadeInUp uppercase text-[#F8F7E5] max-w-5xl mx-auto leading-tight">
+          <h1 className="text-6xl md:text-6xl lg:text-7xl xl:text-9xl font-freudian animate-fadeInUp uppercase text-[#FFF9F2] max-w-5xl mx-auto leading-tight">
             Marine Chemicals
             <br />
             for Cleaning and
@@ -22,9 +22,9 @@ export default function Home() {
             <span className="relative z-10 block">Maintenance</span>
           </h1>
 
-          <hr className="my-6 border-dashed border-[#F8F7E5]" />
+          <hr className="my-6 border-dashed border-[#FFF9F2]" />
 
-          <h3 className="relative z-10 mt-6 text-lg sm:text-xl md:text-3xl lg:text-4xl font-freudian uppercase max-w-3xl text-[#F8F7E5] mx-auto">
+          <h3 className="relative z-10 mt-6 text-lg sm:text-xl md:text-3xl lg:text-4xl font-freudian uppercase max-w-3xl text-[#FFF9F2] mx-auto">
             We Provide Solutions
           </h3>
         </div>
@@ -40,9 +40,9 @@ export default function Home() {
 
       {/* 2--------------------- */}
 
-      <section className="bg-[#596f61] text-[#F8F7E5] py-12">
+      <section className="bg-[#003366] text-[#F8F7E5] py-12">
         <div className="text-center">
-         <h1 className="text-xl md:text-6xl font-Roseford text-[#1D1D1D]   font-bold leading-none">
+         <h1 className="text-xl md:text-6xl font-Roseford text-[#520000]   font-bold leading-none">
             Are you a shiphandler?
           </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 mt-10 text-center md:text-left">
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="text-center md:text-left">
                 <div className="flex gap-2 justify-start items-center">
                   {" "}
-                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#F8F7E5] bg-[#1D1D1D]">
+                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#FFF9F2] bg-[#520000]">
                     1
                   </span>
                   <h3 className="text-1xl md:text-[1.3rem] font-Roseford text-[#F8F7E5] font-bold leading-none">
@@ -61,7 +61,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <p className="text-base md:text-lg leading-tight font-Freudian text-[#1D1D1D] mt-2">
+                <p className="text-base md:text-lg leading-tight font-Freudian text-[#FFF9F2] mt-2">
                   Our cargo cleaning chemicals are specially formulated to
                   remove tough residues from cargos like
                   <span className="font-bold">
@@ -75,7 +75,7 @@ export default function Home() {
               <div className="mt-10 text-center md:text-left">
                 <div className="flex gap-2 justify-start items-center">
                   {" "}
-                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#F8F7E5] bg-[#1D1D1D]">
+                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#FFF9F2] bg-[#520000]">
                     2
                   </span>
                   <h3 className="text-1xl md:text-[1.3rem] font-Roseford text-[#F8F7E5] font-bold leading-none">
@@ -83,7 +83,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <p className="text-base md:text-lg font-Freudian text-[#1D1D1D] leading-tight mt-2">
+                <p className="text-base md:text-lg font-Freudian text-[#FFF9F2] leading-tight mt-2">
                   We offer a comprehensive range of marine test kits, including
                   <span className="font-bold">
                     nitrite, chloride, potable water, pH meters, and
@@ -158,7 +158,7 @@ export default function Home() {
               <div className="text-center md:text-left">
                 <div className="flex gap-2 justify-start items-center">
                   {" "}
-                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#F8F7E5] bg-[#1D1D1D]">
+                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#FFF9F2] bg-[#520000]">
                     3
                   </span>
                   <h3 className="text-1xl md:text-[1.3rem] font-freudian text-[#F8F7E5] font-bold leading-none">
@@ -166,7 +166,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <p className="text-base md:text-lg leading-tight font-Freudian text-[#1D1D1D] mt-2">
+                <p className="text-base md:text-lg leading-tight font-Freudian text-[#FFF9F2] mt-2">
                   Our water treatment chemical range includes
                   <span className="font-bold">
                     corrosion & scale inhibitors, antifoams, and anti-fungal
@@ -180,7 +180,7 @@ export default function Home() {
               <div className="mt-10 text-center md:text-left">
                 <div className="flex gap-2 justify-start items-center">
                   {" "}
-                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#F8F7E5] bg-[#1D1D1D]">
+                  <span className="text-xs md:text-[1.3rem] uppercase font-Freudian border rounded-full px-2 py-1 text-[#FFF9F2] bg-[#520000]">
                     4
                   </span>
                   <h3 className="text-1xl md:text-[1.3rem] font-Roseford text-[#F8F7E5] font-bold leading-none">
@@ -188,7 +188,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <p className="text-base md:text-lg font-Freudian text-[#1D1D1D] leading-tight mt-2">
+                <p className="text-base md:text-lg font-Freudian text-[#FFF9F2] leading-tight mt-2">
                   We supply high-performance deck and engine maintenance
                   chemicals such as{" "}
                   <span className="font-bold">
@@ -257,7 +257,7 @@ export default function Home() {
         </Parallax>
       </section>
       {/* newsletter section */}
-      <section className="bg-[#1D1D1D] h-[65rem] md:h-[55rem] mt-10 p-6 transition-opacity duration-300 overflow-hidden">
+      <section className="bg-[#333333] h-[65rem] md:h-[55rem] mt-10 p-6 transition-opacity duration-300 overflow-hidden">
         {/* <Parallax speed={-10}> */}
           {/* <div className="max-w-7xl w-full flex  flex-col px-3  lg:flex-row  justify-center gap-12 lg:gap-24">
             <div className="flex flex-col  items-start max-w-xs sm:max-w-sm lg:max-w-md">
@@ -308,7 +308,7 @@ export default function Home() {
           </div> */}
 
           <div className="relative md:p-8  w-full">
-            <h1 className="text-5xl mb-4 text-center font-Freudian text-[#F8F7E5]">
+            <h1 className="text-5xl mb-4 text-center font-Freudian text-[#520000]">
               Our Speciality
             </h1>
             <ExpandingGallery />
@@ -370,7 +370,7 @@ export default function Home() {
         </div>
       </div>
       </section> */}
-      <section className="py-16 bg-[#1D1D1D] text-[#F8F7E5]">
+      <section className="py-16 bg-[#333333] text-[#F8F7E5]">
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto px-6 gap-8">
           {/* Heading */}
           <h2 className="font-Roseford text-[#F8F7E5]  text-[8vw] md:text-[5vw]  leading-[1.1] text-left md:text-center md:px-11 md:text-left">
