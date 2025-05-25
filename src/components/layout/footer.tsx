@@ -26,17 +26,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="mt-4 text-cream/60">
-          Website by{" "}
-          <Link
-            href="https://dejongensvanboven.nl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cream hover:text-olive transition-colors"
-          >
-            Geetika Das
-          </Link>
-        </div>
+       
       </div>
     </footer>
   );
