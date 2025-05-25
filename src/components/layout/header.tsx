@@ -40,9 +40,9 @@ useEffect(() => {
         <button className={`bg-[#d998b5] font-Freudian text-black px-4 py-2 rounded-full font-bold text-sm hover:text-[#F8F7E5] hover:bg-black ${isMenu ? "bg-[#FE5D26]" : "bg-[#d998b5]"}`}>
           ORDER NOW
         </button>
-    <div className={`h-24 md:h-24 h-16 flex items-center justify-center ${scrollY ? "bg-black" : "bg-transparent px-8"}`}>
+    <div className={`h-24 md:h-24 h-16 flex items-center justify-center ${scrollY ? "bg-black rounded-full" : "bg-transparent px-8"}`}>
   <img
-    src={!isMenu ? "/images/download.svg" : "/images/logo-1.svg"}
+    src={!isMenu ? "/images/a2.svg" : "/images/file.svg"}
     alt="Divider Icon"
     className="h-full w-auto whitespace-nowrap"
   />
@@ -92,9 +92,9 @@ useEffect(() => {
           </div>
         </div>
  <img
-          src={!isMenu ? "/images/download.svg" : "/images/logo-1.svg"}
+          src={!isMenu ? "/images/a2.svg" : "/images/file.svg"}
           alt="Divider Icon"
-          className={`h-24 md:h-24 h-16 whitespace-nowrap text-white ${scrollY ? "bg-black" : "bg-transparent px-8"}`}
+          className={`h-24 md:h-24 h-16 whitespace-nowrap text-white ${scrollY ? "bg-black rounded-full" : "bg-transparent px-8"}`}
         />
       
 

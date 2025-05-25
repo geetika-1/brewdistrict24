@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="py-6 text-sm text-center text-cream bg-darkgray">
       <div className="container max-w-6xl px-4 mx-auto">
         <div className="flex flex-wrap items-center justify-center gap-2">
-          <span>© {currentYear} BrewDistrict24 - All rights reserved</span>
+          <span>© {currentYear} Roxsol Chemicals - All rights reserved</span>
           <span className="hidden mx-1 sm:inline">|</span>
           <Link href="/cookies" className="text-cream hover:text-olive transition-colors">
             Cookies
@@ -34,7 +34,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-cream hover:text-olive transition-colors"
           >
-            De Jongens van Boven
+            Geetika Das
           </Link>
         </div>
       </div>

@@ -4,7 +4,7 @@ import ClientBody from "./ClientBody";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brewdistrict 24 | Classic craft beers, brewed without fuss",
+  title: "RXSOLS Chemicals",
   description:
     "Welcome to the neighbourhood. Our classic craft beers are brewed without fuss. Pure and honest. Damn delicious.",
   icons: {

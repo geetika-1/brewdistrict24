@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative py-24 text-center  bg-[#596f61] overflow-hidden">
-        <div className="container max-w-6xl px-4 mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-freudian animate-fadeInUp uppercase text-[#F8F7E5] max-w-5xl mx-auto leading-tight">
+        <div className="container max-w-6xl px-4 mt-4 mx-auto">
+          <h1 className="text-6xl md:text-6xl lg:text-7xl xl:text-9xl font-freudian animate-fadeInUp uppercase text-[#F8F7E5] max-w-5xl mx-auto leading-tight">
             Marine Chemicals
             <br />
             for Cleaning and
@@ -28,22 +28,27 @@ export default function Home() {
             We Provide Solutions
           </h3>
         </div>
-
+{/* 
         <div className="absolute z-0 top-10 left-1/2 -translate-x-1/2 md:top-16 md:left-[42%] md:translate-x-0">
           <img
             src="/images/ipa-can.png"
             alt="can"
             className="h-60 sm:h-72 md:h-80 lg:h-96 w-auto mx-auto"
           />
-        </div>
+        </div> */}
       </section>
 
       {/* 2--------------------- */}
 
       <section className="bg-[#596f61] text-[#F8F7E5] py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 text-center md:text-left">
+        <div className="text-center">
+         <h1 className="text-xl md:text-6xl font-Roseford text-[#1D1D1D]   font-bold leading-none">
+            Are you a shiphandler?
+          </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 mt-10 text-center md:text-left">
+          
           {/* Left block */}
-          <Parallax speed={-10}>
+          <Parallax speed={-5}>
             <div className="flex flex-col justify-between items-center md:items-end space-y-4">
               <div className="text-center md:text-left">
                 <div className="flex gap-2 justify-start items-center">
@@ -91,9 +96,7 @@ export default function Home() {
               </div>
             </div>
           </Parallax>
-          <h1 className="text-6xl font-Roseford text-[#1D1D1D] hidden font-bold leading-none">
-            NEIPA
-          </h1>
+         
           {/* Center block with can */}
           <Parallax speed={10}>
             <div className="flex justify-center items-center">
@@ -199,6 +202,7 @@ export default function Home() {
             </div>
           </Parallax>
         </div>
+        </div>
       </section>
 
       <section id="about" className="py-24 bg-cream">
@@ -253,8 +257,8 @@ export default function Home() {
         </Parallax>
       </section>
       {/* newsletter section */}
-      <section className="bg-[#1D1D1D] h-[55rem] mt-6 p-6 transition-opacity duration-300 overflow-hidden">
-        <Parallax speed={-10}>
+      <section className="bg-[#1D1D1D] h-[65rem] md:h-[55rem] mt-10 p-6 transition-opacity duration-300 overflow-hidden">
+        {/* <Parallax speed={-10}> */}
           {/* <div className="max-w-7xl w-full flex  flex-col px-3  lg:flex-row  justify-center gap-12 lg:gap-24">
             <div className="flex flex-col  items-start max-w-xs sm:max-w-sm lg:max-w-md">
               <h1 className="font-Roseford   md:text-[4vw]  md:px-10 xs:text-[7vw] font-400 leading-[4.4vw] text-[8vw] leading-tight text-[#f3f4e8]">
@@ -303,22 +307,22 @@ export default function Home() {
             </div>
           </div> */}
 
-          <div className="relative p-8  w-full">
+          <div className="relative md:p-8  w-full">
             <h1 className="text-5xl mb-4 text-center font-Freudian text-[#F8F7E5]">
               Our Speciality
             </h1>
             <ExpandingGallery />
           </div>
-        </Parallax>
+        {/* </Parallax> */}
       </section>
-      <section className="w-100 mt-6">
-        <Parallax speed={-10}>
+      <section className="w-100">
+        {/* <Parallax speed={-10}> */}
           <img
             src="/images/Brewdistrict_24_SocialShare.png"
             alt="img-last"
             className="w-[100vw]"
           />
-        </Parallax>
+        {/* </Parallax> */}
       </section>
       {/* Locations Section */}
       {/* <section className="py-16 bg-[#1D1D1D] text-[#F8F7E5] ">
