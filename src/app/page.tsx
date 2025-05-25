@@ -15,17 +15,17 @@ export default function Home() {
       <section className="relative py-24 text-center  bg-[#596f61] overflow-hidden">
         <div className="container max-w-6xl px-4 mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-freudian animate-fadeInUp uppercase text-[#F8F7E5] max-w-5xl mx-auto leading-tight">
-            Classic craft beers,
+            Marine Chemicals
             <br />
-            brewed without
+            for Cleaning and
             <br />
-            <span className="relative z-10 block">fuss</span>
+            <span className="relative z-10 block">Maintenance</span>
           </h1>
 
           <hr className="my-6 border-dashed border-[#F8F7E5]" />
 
           <h3 className="relative z-10 mt-6 text-lg sm:text-xl md:text-3xl lg:text-4xl font-freudian uppercase max-w-3xl text-[#F8F7E5] mx-auto">
-            Pure, honest and damn delicious
+            We Provide Solutions
           </h3>
         </div>
 
@@ -58,10 +58,13 @@ export default function Home() {
 
                 <p className="text-base md:text-lg leading-tight font-Freudian text-[#1D1D1D] mt-2">
                   Our cargo cleaning chemicals are specially formulated to
-                  remove tough residues from cargos like<span className="font-bold">pet coke,palm oil,
-                  vegetable oils, animal fats, petroleum products, and dry bulk
-                  materials.</span> Trusted by ship chandlers, they ensure effective
-                  tank and hold cleaning for fast, compliant vessel turnaround.
+                  remove tough residues from cargos like
+                  <span className="font-bold">
+                    pet coke,palm oil, vegetable oils, animal fats, petroleum
+                    products, and dry bulk materials.
+                  </span>{" "}
+                  Trusted by ship chandlers, they ensure effective tank and hold
+                  cleaning for fast, compliant vessel turnaround.
                 </p>
               </div>
               <div className="mt-10 text-center md:text-left">
@@ -76,11 +79,14 @@ export default function Home() {
                 </div>
 
                 <p className="text-base md:text-lg font-Freudian text-[#1D1D1D] leading-tight mt-2">
-                  We offer a comprehensive range of marine test kits,
-                  including<span className="font-bold">nitrite, chloride, potable water, pH meters, and
-                  hydrometers,</span> tailored for shipboard use. These kits help
-                  ensure accurate monitoring of water quality, system
-                  efficiency, and compliance with marine safety standards.
+                  We offer a comprehensive range of marine test kits, including
+                  <span className="font-bold">
+                    nitrite, chloride, potable water, pH meters, and
+                    hydrometers,
+                  </span>{" "}
+                  tailored for shipboard use. These kits help ensure accurate
+                  monitoring of water quality, system efficiency, and compliance
+                  with marine safety standards.
                 </p>
               </div>
             </div>
@@ -158,11 +164,14 @@ export default function Home() {
                 </div>
 
                 <p className="text-base md:text-lg leading-tight font-Freudian text-[#1D1D1D] mt-2">
-                  Our water treatment chemical range includes<span className="font-bold">corrosion & scale
-                  inhibitors, antifoams, and anti-fungal biocides,</span> designed for
-                  marine boilers, cooling systems, and RO plants. These
-                  solutions maintain system performance, prevent downtime, and
-                  extend equipment life at sea.
+                  Our water treatment chemical range includes
+                  <span className="font-bold">
+                    corrosion & scale inhibitors, antifoams, and anti-fungal
+                    biocides,
+                  </span>{" "}
+                  designed for marine boilers, cooling systems, and RO plants.
+                  These solutions maintain system performance, prevent downtime,
+                  and extend equipment life at sea.
                 </p>
               </div>
               <div className="mt-10 text-center md:text-left">
@@ -178,10 +187,13 @@ export default function Home() {
 
                 <p className="text-base md:text-lg font-Freudian text-[#1D1D1D] leading-tight mt-2">
                   We supply high-performance deck and engine maintenance
-                  chemicals such as <span className="font-bold">air cooler cleaners, rust removers, carbon
-                  removers,</span>and more. Trusted by ship chandlers, these products
-                  ensure efficient engine operation, corrosion control, and
-                  effective cleaning in harsh marine environments.
+                  chemicals such as{" "}
+                  <span className="font-bold">
+                    air cooler cleaners, rust removers, carbon removers,
+                  </span>
+                  and more. Trusted by ship chandlers, these products ensure
+                  efficient engine operation, corrosion control, and effective
+                  cleaning in harsh marine environments.
                 </p>
               </div>
             </div>
@@ -193,23 +205,24 @@ export default function Home() {
         <Parallax speed={-10}>
           <div className="container max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
             <h2 className="text-sm font-freudian font-bold uppercase text-darkgray text-center mb-16">
-              About BrewDistrict24
+              About Rxsol Chemicals
             </h2>
 
             <div className="mx-auto text-center">
               <h3 className="text-[8vw]  md:text-[4vw] font-Roseford uppercase text-darkgray mb-8 leading-tight">
-                Welcome to the neighborhood.
+                Marine Chemicals manufacturer
                 <br />
-                This{" "}
+                in UAE Supplier{" "}
                 <span className="text-center  hidden md:inline-block freudian mb-2 w-[12.5vw] text-[8px] align-middle">
-                  A haven for like-hearted people, where we drink, laugh and
-                  have good conversations
+                  of cleanig chemicals,deck engine cleaning chemicals,etc to
+                  ship
                 </span>{" "}
-                is where we come together{" "}
+                in UAE, OMAN, AND INDIA. Get access to premium quality marine
+                chemicals for ships now. One place{" "}
                 <span className="text-center  hidden md:inline-block font-freudian mb-2 w-[6.5vw] text-[8px] align-middle">
-                  Enjoy every given moment
+                  to buy all mariane related chemicals,test kits, and
                 </span>{" "}
-                as one.
+                chemicals applicators.
               </h3>
 
               <div className="px-2 sm:px-4 md:px-8">
@@ -289,12 +302,13 @@ export default function Home() {
               </div>
             </div>
           </div> */}
-          
-          <div className="relative p-8  w-full">
-            <h1 className="text-5xl mb-4 text-center font-Freudian text-[#F8F7E5]">Our Speciality</h1>
-                      <ExpandingGallery/>
-          </div>
 
+          <div className="relative p-8  w-full">
+            <h1 className="text-5xl mb-4 text-center font-Freudian text-[#F8F7E5]">
+              Our Speciality
+            </h1>
+            <ExpandingGallery />
+          </div>
         </Parallax>
       </section>
       <section className="w-100 mt-6">
