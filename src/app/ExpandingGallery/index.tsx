@@ -1,111 +1,32 @@
-// "use client";
-// import React, { useState } from "react";
 
-
-
-
-// const images = [
-//   {
-//     src: "https://chemicals.dubichem.com/cdn/shop/files/dubichemrxsol.jpg?v=1742915178&width=550",
-//     title: "RX Sol Chemicals",
-//   },
-//   {
-//     src: "https://chemicals.dubichem.com/cdn/shop/files/ro_chemicals.jpg?v=1742917555&width=1100",
-//     title: "RO Chemicals",
-//   },
-//   {
-//     src: "https://chemicals.dubichem.com/cdn/shop/files/marinechemicals.jpg?v=1742917078&width=550",
-//     title: "Marine Chemicals",
-//   },
-//   {
-//     src: "https://chemicals.dubichem.com/cdn/shop/files/ro_chemicals.jpg?v=1742917555&width=1100",
-//     title: "Reverse Osmosis",
-//   },
-//   {
-//     src: "https://chemicals.dubichem.com/cdn/shop/files/ro_chemicals.jpg?v=1742917555&width=1100",
-//     title: "Water Treatment",
-//   },
-// ];
-
-// const ExpandingGallery = () => {
-//   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-//   return (
-//     <div className="flex h-screen overflow-hidden relative container mx-auto px-4 gap-x-4">
-//       {images.map(({ src, title }, index) => {
-//         const isHovered = hoveredIndex === index;
-//         const isOther = hoveredIndex !== null && hoveredIndex !== index;
-
-//         const flexBasis = isHovered
-//           ? "70%"
-//           : isOther
-//           ? "calc((100% - 60%) / 4)"
-//           : "calc((100% / 5) - 4px)";
-
-//         return (
-//           <div
-//             key={index}
-//             onMouseEnter={() => setHoveredIndex(index)}
-//             onMouseLeave={() => setHoveredIndex(null)}
-//             style={{
-//               flex: `0 0 ${flexBasis}`,
-//               transition: "flex-basis 0.5s ease-in-out",
-//               maxHeight: "100vh",
-//             }}
-//             className="relative overflow-hidden aspect-[9.6/12] group bg-black"
-//           >
-//             {/* Static image that fills container */}
-//             <img
-//               src={src}
-//               alt={title}
-//               className="h-full w-full object-left"
-//             />
-
-//             {/* Overlay with title + button */}
-//             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col items-start justify-end p-6">
-//               <h2 className="text-white text-2xl font-semibold mb-4">
-//                 {title}
-//               </h2>
-//               <button className="bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition">
-//                 Learn More
-//               </button>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
-// export default ExpandingGallery;
 "use client";
 import React, { useState } from "react";
 
 const images = [
   {
     src: "https://chemicals.dubichem.com/cdn/shop/files/dubichemrxsol.jpg?v=1742915178&width=550",
-    title: "RX Sol Chemicals",
+    title: "Deck Engine",
     description: "High-quality cleaning agents for industrial and marine use.",
   },
   {
     src: "	https://chemicals.dubichem.com/cdn/shop/files/fuel_treatment.jpg?v=1742916967&width=750",
-    title: "RO Chemicals",
+    title: "Water Treatment",
     description: "Specially formulated chemicals for reverse osmosis systems.",
   },
   {
     src: "https://chemicals.dubichem.com/cdn/shop/files/ro_chemicals.jpg?v=1742917555&width=1100",
-    title: "Reverse Osmosis",
+    title: "Rigs & Oil Fields",
     description: "Purify and maintain your water treatment plants efficiently.",
   },
     {
     src: "https://chemicals.dubichem.com/cdn/shop/files/metaltreatment.jpg?v=1742917215&width=1100",
-    title: "Marine Chemicals",
+    title: "Metal Protections",
     description: "Marine-grade solutions for maintenance and cleaning.",
   },
 
   {
     src: "https://chemicals.dubichem.com/cdn/shop/files/ro_chemicals.jpg?v=1742917555&width=375",
-    title: "Water Treatment",
+    title: "RO Solutions",
     description: "Powerful and reliable solutions for clean water systems.",
   },
 ];
