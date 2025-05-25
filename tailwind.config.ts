@@ -101,6 +101,10 @@ const config = {
       '0%': { opacity: '0', transform: 'translateY(40px)' },
       '100%': { opacity: '1', transform: 'translateY(0)' },
     },
+     slideInUp: {
+      '0%': { opacity: '0', transform: 'translate3d(0, 40px, 0)' },
+      '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
+    },
       },
       
       animation: {
@@ -108,6 +112,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll: 'scroll 20s linear infinite',
          fadeInUp: 'fadeInUp 0.5s ease-out forwards',
+         slideInUp:'fadeInUp 0.6s ease-out forwards',
       },
     },
   },
